@@ -1,12 +1,12 @@
-import React from "react";
+import React, {Component} from "react";
 import {Link as RouterLink} from "react-router-dom";
 import Link from '@material-ui/core/Link';
 import {BrowserRouter, Route} from "react-router-dom";
-import Information from "../Views/Information";
 
 
-const QuakeToolbar = () => {
-    return (
+class QuakeToolbar extends Component {
+    render () {
+      return(
         <header>
           <nav className="App-nav">
             <ul>
@@ -18,6 +18,7 @@ const QuakeToolbar = () => {
           </nav>
         </header>
     );
+  }
 };
 
 export default QuakeToolbar;
