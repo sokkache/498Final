@@ -7,11 +7,13 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import {BrowserRouter, Route} from "react-router-dom";
-import Header from "./components/Header";
+import {BrowserRouter, Route, NavLink, HashRouter, Switch} from "react-router-dom";
+import QuakeToolbar from "./components/QuakeToolbar";
 import About from "./components/About";
 import Plan from "./components/Plan";
 import Scenarios from "./components/Scenarios";
+import Information from "./Views/Information";
+import Home from "./Views/Home";
 
 
 import Button from '@material-ui/core/Button';
@@ -27,25 +29,20 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-      <BrowserRouter>
-        <Route path="/" component={Header}/>
-      </BrowserRouter>
-
-      <BrowserRouter>
-        <Route path="/" component={About}/>
-      </BrowserRouter>
-
-      <BrowserRouter>
-        <Route path="/" component={Plan}/>
-      </BrowserRouter>
-
-      <BrowserRouter>
-        <Route path="/" component={Scenarios}/>
-      </BrowserRouter>
-
+      <div className="App">
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <div>
+              <QuakeToolbar />
+              <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/About" component={About} />
+              <Route path="/Information" component={Information} />
+              <Route path="/Plan" component={Plan} />
+              <Route path="/Scenarios" component={Scenarios} />
+              </Switch>
+            </div>
+          </BrowserRouter>
       </div>
-
     );
   }
 }

@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, {Component} from "react";
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -12,7 +13,8 @@ import family from "./family.png";
 import firstaid from "./firstaid.png";
 
 
-const Plan = () => {
+class Plan extends Component {
+  render(){
     return (
         <section className="App-build-plan">
         <h2> Build a Plan </h2>
@@ -60,6 +62,7 @@ const Plan = () => {
           </Button>
       </section>
     );
+    }
 };
 
 export default Plan;
