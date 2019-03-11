@@ -3,7 +3,7 @@
 }
 
 header {
-  background-color:	#331900;
+  background-color:gray;
   height: 80px;
   display: flex;
   flex-direction: column;

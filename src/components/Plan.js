@@ -14,7 +14,15 @@ import house from "./house.png";
 import family from "./fam_pets.jpeg";
 import firstaid from "./firstaid.png";
 
-
+const styles = {
+  card: {
+    maxWidth: 345,
+  },
+  media: {
+    height: 140,
+      objectFit: 'cover',
+  },
+};
 
 class Plan extends Component {
   render(){
@@ -71,4 +79,4 @@ class Plan extends Component {
     }
 };
 
-export default Plan;
+export default withStyles(styles)(Plan);

@@ -15,7 +15,10 @@ import pet from "./pet.png";
 
 const Scenarios = () => {
     return (
-        <section className="App-scenarios">
+      
+      
+       <section className="App-scenarios">
+
         <h2> Quick Tips </h2>
         <p>Know What to Do in Different Scenarios during an Earthquake</p>
         <div className="scenario-group">
