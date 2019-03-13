@@ -5,17 +5,9 @@ import {BrowserRouter, Route} from "react-router-dom";
 class Information extends Component {
     render() {
         return (
-            <section className="About-us">
-            <div className="box">
-            <h1> About Us </h1>
-            <p>We are a group that is dedicated to allowing people in earthquake prone areas to understand the effects and consequences of an earthquake and how to prepare themselves and their family for an earthquake. We help to provide a readiness plan that is customized for each person based on their living situation, as well as scenarios on what to do during earthquakes and general information about how earthquakes occur. 
-            </p>
-            <Button variant="contained" color="#FF9C27" 
-            //onClick={Info}   onclick brings this to new page
-            >
-                    Learn About Earthquakes
-            </Button>
-            </div>
+        <section className="information">
+            <h2>Information About Earthquakes</h2>
+            <p>Are you living in an area prone to Earthquakes? Find out <a href="https://www.fema.gov/earthquake-hazard-maps#">here</a>.</p>
         </section>
         );
     }
