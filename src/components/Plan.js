@@ -14,15 +14,7 @@ import house from "./house.png";
 import family from "./fam_pets.jpeg";
 import firstaid from "./firstaid.png";
 
-const styles = {
-  card: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 140,
-      objectFit: 'cover',
-  },
-};
+
 
 class Plan extends Component {
   render(){
@@ -71,7 +63,7 @@ class Plan extends Component {
             </CardContent>
             </Card>
           </div>
-          <Button variant="contained" color="#FF9C27">
+          <Button variant="contained" color="#FF9C27" onClick>
           Build Your plan
           </Button>
       </section>
@@ -79,4 +71,4 @@ class Plan extends Component {
     }
 };
 
-export default withStyles(styles)(Plan);
+export default Plan;
