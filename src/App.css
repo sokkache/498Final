@@ -1,7 +1,14 @@
+
+
 .App {
   text-align: center;
+  padding-right: 5%;
+  padding-left: 5%
 }
+.QuakeToolbar {
+  justify-content: right;
 
+}
 header {
   background-color:gray;
   height: 80px;
