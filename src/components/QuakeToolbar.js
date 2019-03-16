@@ -5,39 +5,46 @@ import { withStyles } from '@material-ui/core/styles';
 import {BrowserRouter, Route} from "react-router-dom";
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-//import Button from '@material-ui/core/Button';
-import Button from 'react-bootstrap/Button';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Button';
+//import Button from 'react-bootstrap/Button';
 
 const styles = {
   root: {
     flexGrow: 1,
   },
+
   grow: {
     flexGrow: 1,
   },
+toolbar:{
+  marginRight: -800
+}
   
-
+ 
 };
 
 class QuakeToolbar extends Component {
     render () {
       return(
-        <header>
+       
           <nav className="App-nav">
-          <Toolbar>
-            <ul>
-            <Button> <li><Link component ={RouterLink} to={"/"}>Home</Link></li> </Button>
-            <Button color="grey"> <li><Link component ={RouterLink} to={"/information"}>Earthquake Information</Link></li> </Button>
-            <Button color="grey"><li><Link component ={RouterLink} to={"/plan"}>Plan</Link></li> </Button>
-            <Button color="grey"><li><Link component ={RouterLink} to={"/scenarios"}>Scenarios</Link></li></Button>
-            </ul>
+         <header >
+          <Toolbar style={styles.toolbar}>
+            <Button component ={RouterLink} to={"/"}color = "inherit">  Home </Button>
+            <Button component ={RouterLink} to={"/information"} color= 'inherit' >Information</Button>
+            <Button component ={RouterLink} to={"/Plan"}color= 'inherit' >Plan</Button>
+            <Button component ={RouterLink} to={"/Scenarios"}color= 'inherit' >Scenarios</Button>
+         
             </Toolbar>
+            </header>
           </nav>
-        </header>
+       
     );
   }
 };
 
 export default withStyles(styles)(QuakeToolbar);
+
 
 
