@@ -78,6 +78,7 @@ header {
   line-height: 175px;
   text-align: center;
   border:10px solid black;
+  cursor: pointer;
 }
 
 .scenario img {
