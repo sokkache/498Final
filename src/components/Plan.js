@@ -13,7 +13,8 @@ import Button from '@material-ui/core/Button';
 import house from "./home2.png";
 import family from "./fam_pets.png";
 import firstaid from "./emergencykit.png";
-import CardGroup from 'react-bootstrap/CardGroup'
+import CardGroup from 'react-bootstrap/CardGroup';
+import * as typeformEmbed from '@typeform/embed';
 
 const styles = {
   card: {
@@ -39,7 +40,27 @@ const styles = {
   }
 };
 
+
 class Plan extends Component {
+
+  componentDidMount() {
+    const popup1 = typeformEmbed.makePopup('https://cheyennesokkappa.typeform.com/to/DUHXM9' ,
+       { 
+         mode:'popup',
+         autoClose:'3000',
+         hideHeaders: true,
+         hideFooters: true,
+         onSubmit: function() {
+           console.log("Typeform successfully submitted")
+         }
+       }
+    )
+       document.getElementById('popup').addEventListener('click',function
+       (){
+         popup1.open();
+       });
+  }
+
   render(){
     return (
         <section className="App-build-plan">
@@ -103,10 +124,10 @@ class Plan extends Component {
             </Card>
             
             </Grid>
-            <Button style={styles.button} size="large" variant="contained" color="#FF9C27">
-          Build Your plan
+            <Button id="popup" style={styles.button} size="large" variant="contained" color="#FF9C27">
+              Build Your plan
           </Button>
-            </Grid>
+          </Grid>
           
      
   
