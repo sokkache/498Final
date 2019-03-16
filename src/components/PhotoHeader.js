@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import {Link as RouterLink} from "react-router-dom";
 import headerImage from "./headerImage.png";
 import Card from 'react-bootstrap/Card';
-import {BrowserRouter, Route, NavLink, HashRouter,} from "react-router-dom";
 import  {withStyles}  from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import {withRouter} from 'react-router';
 
 
 const styles = {
@@ -57,14 +57,14 @@ class PhototHeader extends Component {
               <Card.Title style= {styles.title}>Quake</Card.Title>
               <Card.Text style= {styles.text}>
               Helping people in earthquake 
-            prone areas prepare themselves and their family for 
+              prone areas prepare themselves and their family for 
               an earthquake. We help provide a readiness plan that is 
               customized for each person based on their living situation as 
               well as scenarios on what to do during earthquakes. Its never too early
               to start building your readiness plan. 
               </Card.Text>
-              <Button onClick={()=>this.props.router.push("/Information")}style= {styles.button} >Learn More</Button>
-            
+              <Button onClick={()=> {this.props.history.push('/information')}}style= {styles.button}>Learn More</Button>
+
             </Card.ImgOverlay>
           </Card>
         
@@ -75,4 +75,4 @@ class PhototHeader extends Component {
         }
 };
     
-    export default withStyles(styles)(PhototHeader);
+    export default withRouter(withStyles(styles)(PhototHeader));
