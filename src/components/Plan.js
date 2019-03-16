@@ -15,6 +15,7 @@ import family from "./fam_pets.png";
 import firstaid from "./emergencykit.png";
 import CardGroup from 'react-bootstrap/CardGroup'
 
+<<<<<<< HEAD
 const styles = {
   card: {
     maxWidth: 370,
@@ -38,6 +39,9 @@ const styles = {
     textAlign: "left"
   }
 };
+=======
+
+>>>>>>> 26f15760ede882f02e422dd3bee534d16d79dbe9
 
 class Plan extends Component {
   render(){
@@ -101,9 +105,14 @@ class Plan extends Component {
               </Typography>
             </CardContent>
             </Card>
+<<<<<<< HEAD
             
             </Grid>
             <Button style={styles.button} size="large" variant="contained" color="#FF9C27">
+=======
+          </div>
+          <Button variant="contained" color="#FF9C27" onClick>
+>>>>>>> 26f15760ede882f02e422dd3bee534d16d79dbe9
           Build Your plan
           </Button>
             </Grid>
@@ -115,7 +124,11 @@ class Plan extends Component {
     }
 };
 
+<<<<<<< HEAD
 export default withStyles(styles)(Plan);
 
 
 
+=======
+export default Plan;
+>>>>>>> 26f15760ede882f02e422dd3bee534d16d79dbe9
