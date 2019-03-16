@@ -10,38 +10,78 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-import house from "./house.png";
-import family from "./fam_pets.jpeg";
-import firstaid from "./firstaid.png";
+import house from "./home2.png";
+import family from "./fam_pets.png";
+import firstaid from "./emergencykit.png";
+import CardGroup from 'react-bootstrap/CardGroup'
 
+<<<<<<< HEAD
+const styles = {
+  card: {
+    maxWidth: 370,
+    height: 450
+  },
+  media: {
+    maxheight: 100,
+      objectFit: 'cover',
+  },
+  images:{
+    height: 160,
+  },
+  button: {
+    marginBottom:20,
+    backgroundColor: '#993427',
+    color: 'white',
+    fontWeight: "bold",
+    raised: true,
+  },
+  title:{
+    textAlign: "left"
+  }
+};
+=======
 
+>>>>>>> 26f15760ede882f02e422dd3bee534d16d79dbe9
 
 class Plan extends Component {
   render(){
     return (
         <section className="App-build-plan">
-        <h2> Build a Plan </h2>
-        <p>Take our survey to create your customized preparedness plan</p>
-        <div className="card-group">
-          
-            <Card className="card">
+        
+        <h2 style = {styles.title} > Build a Plan  </h2>
+        <p style = {styles.title}>Take our survey to create your customized preparedness plan,
+        it is never too early.</p>
+        
+        <Grid container spacing={24}>
+
+        <Grid item xs={4}>
+            <Card className="card" style= {styles.card}>
+            <CardMedia
+              image = {house} style={styles.images}/>
             <CardContent>
               <Typography className="card-title" variant="h5" color="textPrimary" gutterBottom>
                 Your Home
-              </Typography>
-              <img src={house}/>
+              </Typography >
+              
               <Typography variant="h6" color="textSecondary">
-              Your living situation and the type of home you live in determines some of the practices and protocols you should take in regards to your safety.
-              Specifying this will help us build the most relevant readiness plan for you!              </Typography>
+              Your living situation and the type of home you live in determines some of the 
+              practices and protocols you should take in regards to your safety.
+              Specifying this will help us build the most relevant readiness plan for you! 
+              </Typography>             
             </CardContent>
             </Card>
+            </Grid>
 
-            <Card className="card">
+            <Grid item xs={4}>
+            <Card className="card" style= {styles.card}>
+            <CardMedia
+              image ={family} style={styles.images}/>
+
             <CardContent>
               <Typography className="card-title" variant="h5" color="textPrimary" gutterBottom>
                 Your Family and Pets
               </Typography>
-              <img src={family}/>
+              
               <Typography variant="h6" color="textSecondary">
               One of the most important things to consider during a natural disaster are your family and pets. 
               Taking steps to ensure their safety and prepare will keep you at ease. 
@@ -49,26 +89,46 @@ class Plan extends Component {
               </Typography>
             </CardContent>
             </Card>
+            </Grid>
 
-            <Card className="card">
+            <Grid>
+            <Card className="card" style= {styles.card}>
+            <CardMedia 
+            image={firstaid} style={styles.images}/>
             <CardContent>
               <Typography className="card-title" color="textPrimary" variant="h5" gutterBottom>
-                Your Current First Aid and Preparedness
+                Your Current Preparedness
               </Typography>
-              <img src={firstaid}/>
               <Typography variant="h6" color="textSecondary">
               We want to take into account your previous first aid and preparedness plan to let 
               you know what you're doing great and what you could possibly improve on. 
               </Typography>
             </CardContent>
             </Card>
+<<<<<<< HEAD
+            
+            </Grid>
+            <Button style={styles.button} size="large" variant="contained" color="#FF9C27">
+=======
           </div>
           <Button variant="contained" color="#FF9C27" onClick>
+>>>>>>> 26f15760ede882f02e422dd3bee534d16d79dbe9
           Build Your plan
           </Button>
-      </section>
+            </Grid>
+          
+     
+  
+    </section>
     );
     }
 };
 
+<<<<<<< HEAD
+export default withStyles(styles)(Plan);
+
+
+
+=======
 export default Plan;
+>>>>>>> 26f15760ede882f02e422dd3bee534d16d79dbe9
