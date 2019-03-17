@@ -55,11 +55,9 @@ class Information extends Component {
             <Card.Img src= {headerImage} alt="Card image" style= {styles.image} />
             <Card.ImgOverlay style= {styles.overlay}>
               <Card.Title style= {styles.title}>Mapping</Card.Title>
-              <Card.Text style= {styles.text}> prone areas prepare themselves and their family for 
-              an earthquake. We help provide a readiness plan that is 
-              customized for each person based on their living situation as 
-              well as scenarios on what to do during earthquakes. Its never too early
-              to start building your readiness plan.
+              <Card.Text style= {styles.text}> The map below collects real time Earthquake data from the United States Geological Survey
+              (USGS) where each marker on the map signifies an earthquake. Move the map around to see where earthquakes have ocurred near you 
+              in the past and notice the patterns of the earthquake prone areas.
               </Card.Text>            
             </Card.ImgOverlay>
           </Card>

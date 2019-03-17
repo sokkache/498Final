@@ -24,7 +24,7 @@ componentDidMount(){
             zoom: 4,
             center: {lat: 47.7, lng: -120.7}
            
-          })
+        })
           window.eqfeed_callback = function(results) {
             for (var i = 0; i < results.features.length; i++) {
               var coords = results.features[i].geometry.coordinates;
@@ -32,13 +32,12 @@ componentDidMount(){
               var marker = new window.google.maps.Marker({
                 position: latLng,
                 map: map
+            
               });
             }
           }
 
 }
-
-
 
     render() {
       return (
@@ -51,6 +50,11 @@ componentDidMount(){
   
 
 }
+
+/* CODE CREDIT: The function below was used in order to load the google maps api map
+without using an external library. I wan to credit Yahya Elharony (https://github.com/elharony) who
+posted a tutorial on youTube on how to do this using the function below*/
+
 function loadScript(url) {
     var index  = window.document.getElementsByTagName("script")[0]
     var script = window.document.createElement("script")

@@ -66,7 +66,7 @@ class PhototHeader extends Component {
               well as scenarios on what to do during earthquakes. It's never too early
               to start building your readiness plan. 
               </Card.Text>
-              <Button style= {styles.button}>Learn More</Button>
+              <Button component ={RouterLink} to={"/information"} style= {styles.button}>Learn More</Button>
 
             </Card.ImgOverlay>
           </Card>
