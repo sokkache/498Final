@@ -141,15 +141,10 @@ class Plan extends Component {
             </Card>
             
             </Grid>
-<<<<<<< HEAD
             <Button id="popup" style={styles.button} size="large" variant="contained" color="#FF9C27">
               Build Your plan
           </Button>
           </Grid>
-=======
-            
-            </Grid>
->>>>>>> e37e81c97f09306cfd62feeff9e79d76711933de
           
     </section>
     );
