@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link as RouterLink} from "react-router-dom";
+import {Link as RouterLink, NavLink} from "react-router-dom";
 import headerImage from "./headerImage.png";
 import Card from 'react-bootstrap/Card';
 import  {withStyles}  from '@material-ui/core/styles';
@@ -11,6 +11,7 @@ const styles = {
     
     card: {
        position: 'relative',
+       paddingTop: 10
     },
     overlay: {
        position: 'absolute',
@@ -30,6 +31,8 @@ const styles = {
     },
     text: {
         paddingLeft: '20px',
+        fontSize: 18,
+        lineHeight: 1.25,
         paddingRight: '20px',
         paddingBottom: '10px',
         marginBottom: 0,
@@ -60,10 +63,10 @@ class PhototHeader extends Component {
               prone areas prepare themselves and their family for 
               an earthquake. We help provide a readiness plan that is 
               customized for each person based on their living situation as 
-              well as scenarios on what to do during earthquakes. Its never too early
+              well as scenarios on what to do during earthquakes. It's never too early
               to start building your readiness plan. 
               </Card.Text>
-              <Button onClick={()=> {this.props.history.push('/information')}}style= {styles.button}>Learn More</Button>
+              <Button style= {styles.button}>Learn More</Button>
 
             </Card.ImgOverlay>
           </Card>
