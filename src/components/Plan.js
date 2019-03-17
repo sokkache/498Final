@@ -108,7 +108,7 @@ class Plan extends Component {
             </Card>
             </Grid>
 
-            <Grid>
+            <Grid item xs={4}>
             <Card className="card" style= {styles.card}>
             <CardMedia 
             image={firstaid} style={styles.images}/>
