@@ -34,10 +34,25 @@ const styles = {
     color: 'white',
     fontWeight: "bold",
     raised: true,
+    right:5,
+
   },
   title:{
-    textAlign: "left"
+    fontFamily: "Helvetica",
+        fontSize: 30,
+        fontWeight: "bold",
+        textAlign: "center"
+  },
+  text:{
+    fontFamily: "Helvetica",
+    textAlign: "center",
+    fontSize: 20,
+  },
+  backgroud:{
+    marginTop: 30,
+    marginBottom: 50
   }
+
 };
 
 
@@ -63,12 +78,14 @@ class Plan extends Component {
 
   render(){
     return (
-        <section className="App-build-plan">
+        <section style= {styles.backgroud} className="App-build-plan">
         
-        <h2 style = {styles.title} > Build a Plan  </h2>
-        <p style = {styles.title}>Take our survey to create your customized preparedness plan,
+        <h2 style = {styles.title} > Build a Plan </h2>
+        <p style = {styles.text}>Take our survey to create your customized preparedness plan,
         it is never too early.</p>
-        
+        <Button style={styles.button} size="large" variant="contained" color="#FF9C27">
+          Build Your plan
+          </Button>
         <Grid container spacing={24}>
 
         <Grid item xs={4}>
@@ -124,13 +141,16 @@ class Plan extends Component {
             </Card>
             
             </Grid>
+<<<<<<< HEAD
             <Button id="popup" style={styles.button} size="large" variant="contained" color="#FF9C27">
               Build Your plan
           </Button>
           </Grid>
+=======
+            
+            </Grid>
+>>>>>>> e37e81c97f09306cfd62feeff9e79d76711933de
           
-     
-  
     </section>
     );
     }

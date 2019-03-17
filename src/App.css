@@ -14,7 +14,7 @@ header {
   align-items: center;
   justify-content: center;
   color:white;
-  padding: 20px;
+  padding: 10px;
  
 }
 .HeaderImage {
@@ -38,7 +38,6 @@ header {
 }
 
 .About-us {
-  margin: 10px;
   color:black;
 
   padding:20px;
@@ -52,29 +51,36 @@ header {
 
 .App-build-plan {
   background-color:#D7DADF;
-  margin: 10px;
   padding:20px;
+
+}
+.Infofooter {
+  background-color: #8391A4;
+  padding:20px;
+  display:flex;
+  flex-direction: row;
+  height: 500
 }
 
 .card-group {
   display:flex;
   justify-content: space-between;
 }
-
+#map{
+  height: 100vh
+}
 .card {
-  margin: 20px;
+  margin: 10px;
   width:500px;
   height:auto;
 }
 
 .App-scenarios {
   background-color:#FBC587;
-  margin: 10px;
   padding:20px;
 }
 
 .scenario-group {
-  margin:50px;
   display:flex;
   justify-content: space-between;
 }
@@ -98,7 +104,6 @@ header {
 
 .information {
   background-color: #FFE7CC;
-  margin: 10px;
   padding:20px;
 }
 
