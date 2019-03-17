@@ -83,7 +83,7 @@ class Plan extends Component {
         <h2 style = {styles.title} > Build a Plan </h2>
         <p style = {styles.text}>Take our survey to create your customized preparedness plan,
         it is never too early.</p>
-        <Button style={styles.button} size="large" variant="contained" color="#FF9C27">
+        <Button id='popup' style={styles.button} size="large" variant="contained" color="#FF9C27">
           Build Your plan
           </Button>
         <Grid container spacing={24}>
@@ -139,11 +139,7 @@ class Plan extends Component {
               </Typography>
             </CardContent>
             </Card>
-            
             </Grid>
-            <Button id="popup" style={styles.button} size="large" variant="contained" color="#FF9C27">
-              Build Your plan
-          </Button>
           </Grid>
           
     </section>

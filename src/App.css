@@ -76,8 +76,9 @@ header {
 }
 
 .App-scenarios {
-  background-color:#FBC587;
+  background-color:#D7DADF;
   padding:20px;
+  padding-bottom:50px;
 }
 
 .scenario-group {
