@@ -23,8 +23,8 @@ const styles = {
   
     images:{
     style: "contain",
+    margin: 10
    
-      marginebottom: 20
     },
     title:{
         fontFamily: "Helvetica",
@@ -62,12 +62,10 @@ class MyPlan extends Component {
           </Button>
           </div>
             <img src= {myplan1}></img>
-            <div></div>
+           
             <img src= {myplan2}></img>
-            <div></div>
-            <img src= {myplan3}></img>
-            <div></div>
-            <img src= {myplan4}></img>
+            
+        
             
             
           
