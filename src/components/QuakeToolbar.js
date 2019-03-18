@@ -33,7 +33,7 @@ class QuakeToolbar extends Component {
           <Toolbar style={styles.toolbar}>
             <Button component ={RouterLink} to={"/"}color = "inherit">  Home </Button>
             <Button component ={RouterLink} to={"/information"} color= 'inherit' >Mapping</Button>
-            <Button component ={RouterLink} to={"/Plan"}color= 'inherit' >Plan</Button>
+            <Button component ={RouterLink} to={"/MyPlan"}color= 'inherit' >My Plan</Button>
             <Button component ={RouterLink} to={"/Scenarios"}color= 'inherit' >Quick Tips</Button>
          
             </Toolbar>

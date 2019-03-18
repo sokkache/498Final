@@ -16,6 +16,7 @@ import Information from "./Views/Information";
 import Home from "./Views/Home";
 import ButtonAppBar from "./components/testAppBar"
 import PhotoHeader from "./components/PhotoHeader";
+import MyPlan from './components/MyPlan';
 //import Button from '@material-ui/core/Button';
 
 class App extends Component {
@@ -41,6 +42,7 @@ class App extends Component {
               <Route path="/Information" component={Information} />
               <Route path="/Plan" component={Plan2} />
               <Route path="/Scenarios" component={Scenarios} />
+              <Route path="/MyPlan" component={MyPlan} />
               
               </Switch>
             </div>
