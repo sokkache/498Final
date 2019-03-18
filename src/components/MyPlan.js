@@ -36,7 +36,16 @@ const styles = {
         fontFamily: "Helvetica",
         textAlign: "left",
         fontSize: 20,
-      }
+      },
+      button: {
+        marginBottom:20,
+        backgroundColor: '#993427',
+        color: 'white',
+        fontWeight: "bold",
+        raised: true,
+        right:5
+    }
+    
 }
 
 
@@ -46,8 +55,12 @@ class MyPlan extends Component {
     render(){
         return (
             <section style= {styles.backgroud} className="App-build-plan">
-            
+            <div>
             <h2 style = {styles.title} > My Plan </h2>
+            <Button  style={styles.button} size="large" variant="contained" color="#FF9C27">
+          Print 
+          </Button>
+          </div>
             <img src= {myplan1}></img>
             <div></div>
             <img src= {myplan2}></img>
